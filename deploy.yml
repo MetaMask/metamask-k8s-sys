@@ -38,6 +38,8 @@ metadata:
   namespace: ingress-nginx
 data:
   use-proxy-protocol: 'true'
+  limit-req-status-code: '420'
+  limit-conn-status-code: '420'
 ---
 # Source: ingress-nginx/templates/clusterrole.yaml
 apiVersion: rbac.authorization.k8s.io/v1
